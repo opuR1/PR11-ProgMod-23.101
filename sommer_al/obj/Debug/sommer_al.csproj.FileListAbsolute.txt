@@ -1,0 +1,225 @@
+C:\Users\pr-23.101-sa.NATK\source\repos\sommer_al\sommer_al\bin\Debug\sommer_al.exe.config
+C:\Users\pr-23.101-sa.NATK\source\repos\sommer_al\sommer_al\bin\Debug\sommer_al.exe
+C:\Users\pr-23.101-sa.NATK\source\repos\sommer_al\sommer_al\bin\Debug\sommer_al.pdb
+C:\Users\pr-23.101-sa.NATK\source\repos\sommer_al\sommer_al\obj\Debug\sommer_al.csproj.AssemblyReference.cache
+C:\Users\pr-23.101-sa.NATK\source\repos\sommer_al\sommer_al\obj\Debug\MainWindow.g.cs
+C:\Users\pr-23.101-sa.NATK\source\repos\sommer_al\sommer_al\obj\Debug\task1.g.cs
+C:\Users\pr-23.101-sa.NATK\source\repos\sommer_al\sommer_al\obj\Debug\App.g.cs
+C:\Users\pr-23.101-sa.NATK\source\repos\sommer_al\sommer_al\obj\Debug\sommer_al_MarkupCompile.cache
+C:\Users\pr-23.101-sa.NATK\source\repos\sommer_al\sommer_al\obj\Debug\sommer_al_MarkupCompile.lref
+C:\Users\pr-23.101-sa.NATK\source\repos\sommer_al\sommer_al\obj\Debug\MainWindow.baml
+C:\Users\pr-23.101-sa.NATK\source\repos\sommer_al\sommer_al\obj\Debug\task1.baml
+C:\Users\pr-23.101-sa.NATK\source\repos\sommer_al\sommer_al\obj\Debug\sommer_al.g.resources
+C:\Users\pr-23.101-sa.NATK\source\repos\sommer_al\sommer_al\obj\Debug\sommer_al.Properties.Resources.resources
+C:\Users\pr-23.101-sa.NATK\source\repos\sommer_al\sommer_al\obj\Debug\sommer_al.csproj.GenerateResource.cache
+C:\Users\pr-23.101-sa.NATK\source\repos\sommer_al\sommer_al\obj\Debug\sommer_al.csproj.CoreCompileInputs.cache
+C:\Users\pr-23.101-sa.NATK\source\repos\sommer_al\sommer_al\obj\Debug\sommer_al.exe
+C:\Users\pr-23.101-sa.NATK\source\repos\sommer_al\sommer_al\obj\Debug\sommer_al.pdb
+C:\Users\pr-23.101-sa.NATK\source\repos\sommer_al\sommer_al\obj\Debug\sommer_al.exe.config
+C:\Users\pr-23.101-sa.NATK\source\repos\sommer_al\sommer_al\obj\Debug\task2.g.cs
+C:\Users\pr-23.101-sa.NATK\source\repos\sommer_al\sommer_al\obj\Debug\task3.g.cs
+C:\Users\pr-23.101-sa.NATK\source\repos\sommer_al\sommer_al\obj\Debug\task4.g.cs
+C:\Users\pr-23.101-sa.NATK\source\repos\sommer_al\sommer_al\obj\Debug\task5.g.cs
+C:\Users\pr-23.101-sa.NATK\source\repos\sommer_al\sommer_al\obj\Debug\task2.baml
+C:\Users\pr-23.101-sa.NATK\source\repos\sommer_al\sommer_al\obj\Debug\task3.baml
+C:\Users\pr-23.101-sa.NATK\source\repos\sommer_al\sommer_al\obj\Debug\task4.baml
+C:\Users\pr-23.101-sa.NATK\source\repos\sommer_al\sommer_al\obj\Debug\task5.baml
+G:\ПрограмМод\sommer_al\sommer_al\bin\Debug\sommer_al.exe.config
+G:\ПрограмМод\sommer_al\sommer_al\bin\Debug\sommer_al.exe
+G:\ПрограмМод\sommer_al\sommer_al\bin\Debug\sommer_al.pdb
+G:\ПрограмМод\sommer_al\sommer_al\obj\Debug\sommer_al.csproj.AssemblyReference.cache
+G:\ПрограмМод\sommer_al\sommer_al\obj\Debug\sommer_al.exe.config
+G:\ПрограмМод\sommer_al\sommer_al\obj\Debug\MainWindow.g.cs
+G:\ПрограмМод\sommer_al\sommer_al\obj\Debug\App.g.cs
+G:\ПрограмМод\sommer_al\sommer_al\obj\Debug\sommer_al_MarkupCompile.cache
+G:\ПрограмМод\sommer_al\sommer_al\obj\Debug\sommer_al_MarkupCompile.lref
+G:\ПрограмМод\sommer_al\sommer_al\obj\Debug\MainWindow.baml
+G:\ПрограмМод\sommer_al\sommer_al\obj\Debug\sommer_al.g.resources
+G:\ПрограмМод\sommer_al\sommer_al\obj\Debug\sommer_al.Properties.Resources.resources
+G:\ПрограмМод\sommer_al\sommer_al\obj\Debug\sommer_al.csproj.GenerateResource.cache
+G:\ПрограмМод\sommer_al\sommer_al\obj\Debug\sommer_al.csproj.CoreCompileInputs.cache
+G:\ПрограмМод\sommer_al\sommer_al\obj\Debug\sommer_al.exe
+G:\ПрограмМод\sommer_al\sommer_al\obj\Debug\sommer_al.pdb
+G:\ПрограмМод\sommer_al\sommer_al\obj\Debug\App.baml
+G:\ПрограмМод\sommer_al\sommer_al\obj\Debug\Pages\Autho.g.cs
+G:\ПрограмМод\sommer_al\sommer_al\obj\Debug\Pages\Client.g.cs
+G:\ПрограмМод\sommer_al\sommer_al\obj\Debug\Pages\Autho.baml
+G:\ПрограмМод\sommer_al\sommer_al\obj\Debug\Pages\Client.baml
+C:\3 курс\ПрограмМод\pr6\sommer_al\bin\Debug\sommer_al.exe.config
+C:\3 курс\ПрограмМод\pr6\sommer_al\bin\Debug\sommer_al.exe
+C:\3 курс\ПрограмМод\pr6\sommer_al\bin\Debug\sommer_al.pdb
+C:\3 курс\ПрограмМод\pr6\sommer_al\bin\Debug\EntityFramework.dll
+C:\3 курс\ПрограмМод\pr6\sommer_al\bin\Debug\EntityFramework.SqlServer.dll
+C:\3 курс\ПрограмМод\pr6\sommer_al\bin\Debug\EntityFramework.xml
+C:\3 курс\ПрограмМод\pr6\sommer_al\bin\Debug\EntityFramework.SqlServer.xml
+C:\3 курс\ПрограмМод\pr6\sommer_al\obj\Debug\sommer_al.csproj.AssemblyReference.cache
+C:\3 курс\ПрограмМод\pr6\sommer_al\obj\Debug\sommer_al.exe.config
+C:\3 курс\ПрограмМод\pr6\sommer_al\obj\Debug\MainWindow.g.cs
+C:\3 курс\ПрограмМод\pr6\sommer_al\obj\Debug\Pages\Autho.g.cs
+C:\3 курс\ПрограмМод\pr6\sommer_al\obj\Debug\Pages\Client.g.cs
+C:\3 курс\ПрограмМод\pr6\sommer_al\obj\Debug\App.g.cs
+C:\3 курс\ПрограмМод\pr6\sommer_al\obj\Debug\sommer_al_Content.g.cs
+C:\3 курс\ПрограмМод\pr6\sommer_al\obj\Debug\sommer_al_MarkupCompile.cache
+C:\3 курс\ПрограмМод\pr6\sommer_al\obj\Debug\sommer_al_MarkupCompile.lref
+C:\3 курс\ПрограмМод\pr6\sommer_al\obj\Debug\App.baml
+C:\3 курс\ПрограмМод\pr6\sommer_al\obj\Debug\MainWindow.baml
+C:\3 курс\ПрограмМод\pr6\sommer_al\obj\Debug\Pages\Autho.baml
+C:\3 курс\ПрограмМод\pr6\sommer_al\obj\Debug\Pages\Client.baml
+C:\3 курс\ПрограмМод\pr6\sommer_al\obj\Debug\sommer_al.g.resources
+C:\3 курс\ПрограмМод\pr6\sommer_al\obj\Debug\sommer_al.Properties.Resources.resources
+C:\3 курс\ПрограмМод\pr6\sommer_al\obj\Debug\sommer_al.csproj.GenerateResource.cache
+C:\3 курс\ПрограмМод\pr6\sommer_al\obj\Debug\sommer_al.csproj.CoreCompileInputs.cache
+C:\3 курс\ПрограмМод\pr6\sommer_al\obj\Debug\sommer_al.csproj.Up2Date
+C:\3 курс\ПрограмМод\pr6\sommer_al\obj\Debug\sommer_al.exe
+C:\3 курс\ПрограмМод\pr6\sommer_al\obj\Debug\sommer_al.pdb
+C:\3 курс\ПрограмМод\pr6\sommer_al\obj\Debug\Pages\Employee.g.cs
+C:\3 курс\ПрограмМод\pr6\sommer_al\obj\Debug\Pages\Employee.baml
+C:\3 курс\ПрограмМод\pr6\sommer_al\obj\Debug\Pages\Registration.g.cs
+C:\3 курс\ПрограмМод\pr6\sommer_al\obj\Debug\Pages\Registration.baml
+G:\ПрограмМод\pr6\sommer_al\bin\Debug\sommer_al.exe.config
+G:\ПрограмМод\pr6\sommer_al\bin\Debug\sommer_al.exe
+G:\ПрограмМод\pr6\sommer_al\bin\Debug\sommer_al.pdb
+G:\ПрограмМод\pr6\sommer_al\bin\Debug\EntityFramework.dll
+G:\ПрограмМод\pr6\sommer_al\bin\Debug\EntityFramework.SqlServer.dll
+G:\ПрограмМод\pr6\sommer_al\bin\Debug\EntityFramework.xml
+G:\ПрограмМод\pr6\sommer_al\bin\Debug\EntityFramework.SqlServer.xml
+G:\ПрограмМод\pr6\sommer_al\obj\Debug\sommer_al.csproj.AssemblyReference.cache
+G:\ПрограмМод\pr6\sommer_al\obj\Debug\sommer_al.exe.config
+G:\ПрограмМод\pr6\sommer_al\obj\Debug\MainWindow.g.cs
+G:\ПрограмМод\pr6\sommer_al\obj\Debug\Pages\Autho.g.cs
+G:\ПрограмМод\pr6\sommer_al\obj\Debug\Pages\Client.g.cs
+G:\ПрограмМод\pr6\sommer_al\obj\Debug\Pages\Employee.g.cs
+G:\ПрограмМод\pr6\sommer_al\obj\Debug\Pages\Registration.g.cs
+G:\ПрограмМод\pr6\sommer_al\obj\Debug\App.g.cs
+G:\ПрограмМод\pr6\sommer_al\obj\Debug\sommer_al_Content.g.cs
+G:\ПрограмМод\pr6\sommer_al\obj\Debug\sommer_al_MarkupCompile.cache
+G:\ПрограмМод\pr6\sommer_al\obj\Debug\sommer_al_MarkupCompile.lref
+G:\ПрограмМод\pr6\sommer_al\obj\Debug\App.baml
+G:\ПрограмМод\pr6\sommer_al\obj\Debug\MainWindow.baml
+G:\ПрограмМод\pr6\sommer_al\obj\Debug\Pages\Autho.baml
+G:\ПрограмМод\pr6\sommer_al\obj\Debug\Pages\Client.baml
+G:\ПрограмМод\pr6\sommer_al\obj\Debug\Pages\Employee.baml
+G:\ПрограмМод\pr6\sommer_al\obj\Debug\Pages\Registration.baml
+G:\ПрограмМод\pr6\sommer_al\obj\Debug\sommer_al.g.resources
+G:\ПрограмМод\pr6\sommer_al\obj\Debug\sommer_al.Properties.Resources.resources
+G:\ПрограмМод\pr6\sommer_al\obj\Debug\sommer_al.csproj.GenerateResource.cache
+G:\ПрограмМод\pr6\sommer_al\obj\Debug\sommer_al.csproj.CoreCompileInputs.cache
+G:\ПрограмМод\pr6\sommer_al\obj\Debug\sommer_al.csproj.Up2Date
+G:\ПрограмМод\pr6\sommer_al\obj\Debug\sommer_al.exe
+G:\ПрограмМод\pr6\sommer_al\obj\Debug\sommer_al.pdb
+G:\ПрограмМод\PR8-ProgMod-Sommer-master\sommer_al\bin\Debug\sommer_al.exe.config
+G:\ПрограмМод\PR8-ProgMod-Sommer-master\sommer_al\bin\Debug\sommer_al.exe
+G:\ПрограмМод\PR8-ProgMod-Sommer-master\sommer_al\bin\Debug\sommer_al.pdb
+G:\ПрограмМод\PR8-ProgMod-Sommer-master\sommer_al\bin\Debug\EntityFramework.dll
+G:\ПрограмМод\PR8-ProgMod-Sommer-master\sommer_al\bin\Debug\EntityFramework.SqlServer.dll
+G:\ПрограмМод\PR8-ProgMod-Sommer-master\sommer_al\bin\Debug\EntityFramework.xml
+G:\ПрограмМод\PR8-ProgMod-Sommer-master\sommer_al\bin\Debug\EntityFramework.SqlServer.xml
+G:\ПрограмМод\PR8-ProgMod-Sommer-master\sommer_al\obj\Debug\sommer_al.csproj.AssemblyReference.cache
+G:\ПрограмМод\PR8-ProgMod-Sommer-master\sommer_al\obj\Debug\MainWindow.g.cs
+G:\ПрограмМод\PR8-ProgMod-Sommer-master\sommer_al\obj\Debug\Pages\Autho.g.cs
+G:\ПрограмМод\PR8-ProgMod-Sommer-master\sommer_al\obj\Debug\Pages\Client.g.cs
+G:\ПрограмМод\PR8-ProgMod-Sommer-master\sommer_al\obj\Debug\Pages\Employee.g.cs
+G:\ПрограмМод\PR8-ProgMod-Sommer-master\sommer_al\obj\Debug\Pages\Registration.g.cs
+G:\ПрограмМод\PR8-ProgMod-Sommer-master\sommer_al\obj\Debug\App.g.cs
+G:\ПрограмМод\PR8-ProgMod-Sommer-master\sommer_al\obj\Debug\sommer_al_Content.g.cs
+G:\ПрограмМод\PR8-ProgMod-Sommer-master\sommer_al\obj\Debug\sommer_al_MarkupCompile.cache
+G:\ПрограмМод\PR8-ProgMod-Sommer-master\sommer_al\obj\Debug\sommer_al_MarkupCompile.lref
+G:\ПрограмМод\PR8-ProgMod-Sommer-master\sommer_al\obj\Debug\App.baml
+G:\ПрограмМод\PR8-ProgMod-Sommer-master\sommer_al\obj\Debug\MainWindow.baml
+G:\ПрограмМод\PR8-ProgMod-Sommer-master\sommer_al\obj\Debug\Pages\Autho.baml
+G:\ПрограмМод\PR8-ProgMod-Sommer-master\sommer_al\obj\Debug\Pages\Client.baml
+G:\ПрограмМод\PR8-ProgMod-Sommer-master\sommer_al\obj\Debug\Pages\Employee.baml
+G:\ПрограмМод\PR8-ProgMod-Sommer-master\sommer_al\obj\Debug\Pages\Registration.baml
+G:\ПрограмМод\PR8-ProgMod-Sommer-master\sommer_al\obj\Debug\sommer_al.g.resources
+G:\ПрограмМод\PR8-ProgMod-Sommer-master\sommer_al\obj\Debug\sommer_al.Properties.Resources.resources
+G:\ПрограмМод\PR8-ProgMod-Sommer-master\sommer_al\obj\Debug\sommer_al.csproj.GenerateResource.cache
+G:\ПрограмМод\PR8-ProgMod-Sommer-master\sommer_al\obj\Debug\sommer_al.csproj.CoreCompileInputs.cache
+G:\ПрограмМод\PR8-ProgMod-Sommer-master\sommer_al\obj\Debug\sommer_al.csproj.Up2Date
+G:\ПрограмМод\PR8-ProgMod-Sommer-master\sommer_al\obj\Debug\sommer_al.exe
+G:\ПрограмМод\PR8-ProgMod-Sommer-master\sommer_al\obj\Debug\sommer_al.pdb
+G:\ПрограмМод\PR8-ProgMod-Sommer-master\sommer_al\obj\Debug\Pages\EmployeesList.g.cs
+G:\ПрограмМод\PR8-ProgMod-Sommer-master\sommer_al\obj\Debug\Pages\EmployeesList.baml
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\bin\Debug\sommer_al.exe.config
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\bin\Debug\sommer_al.exe
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\bin\Debug\sommer_al.pdb
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\bin\Debug\EntityFramework.dll
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\bin\Debug\EntityFramework.SqlServer.dll
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\bin\Debug\EntityFramework.xml
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\bin\Debug\EntityFramework.SqlServer.xml
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\obj\Debug\sommer_al.csproj.AssemblyReference.cache
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\obj\Debug\sommer_al.exe.config
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\obj\Debug\MainWindow.g.cs
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\obj\Debug\Pages\Autho.g.cs
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\obj\Debug\Pages\Client.g.cs
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\obj\Debug\Pages\EditEmployeePage.g.cs
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\obj\Debug\Pages\Employee.g.cs
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\obj\Debug\Pages\EmployeesList.g.cs
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\obj\Debug\Pages\Registration.g.cs
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\obj\Debug\App.g.cs
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\obj\Debug\sommer_al_Content.g.cs
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\obj\Debug\sommer_al_MarkupCompile.cache
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\obj\Debug\sommer_al_MarkupCompile.lref
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\obj\Debug\App.baml
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\obj\Debug\MainWindow.baml
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\obj\Debug\Pages\Autho.baml
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\obj\Debug\Pages\Client.baml
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\obj\Debug\Pages\Employee.baml
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\obj\Debug\Pages\EmployeesList.baml
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\obj\Debug\Pages\Registration.baml
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\obj\Debug\Pages\EditEmployeePage.baml
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\obj\Debug\sommer_al.g.resources
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\obj\Debug\sommer_al.Properties.Resources.resources
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\obj\Debug\sommer_al.csproj.GenerateResource.cache
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\obj\Debug\sommer_al.csproj.CoreCompileInputs.cache
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\obj\Debug\sommer_al.csproj.Up2Date
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\obj\Debug\sommer_al.exe
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\obj\Debug\sommer_al.pdb
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\obj\Debug\Pages\ProductsList.g.cs
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\obj\Debug\Pages\ProductsList.baml
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\obj\Debug\Pages\ProductEdit.g.cs
+C:\3 курс\ПрограмМод\PR9-ProgMod-Sommer\sommer_al\obj\Debug\Pages\ProductEdit.baml
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\bin\Debug\sommer_al.exe.config
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\bin\Debug\sommer_al.exe
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\bin\Debug\sommer_al.pdb
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\bin\Debug\EntityFramework.dll
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\bin\Debug\EntityFramework.SqlServer.dll
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\bin\Debug\EntityFramework.xml
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\bin\Debug\EntityFramework.SqlServer.xml
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\sommer_al.csproj.AssemblyReference.cache
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\sommer_al.exe.config
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\MainWindow.g.cs
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\Pages\Autho.g.cs
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\Pages\Client.g.cs
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\Pages\EditEmployeePage.g.cs
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\Pages\Employee.g.cs
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\Pages\EmployeesList.g.cs
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\Pages\ProductEdit.g.cs
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\Pages\ProductsList.g.cs
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\Pages\Registration.g.cs
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\App.g.cs
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\sommer_al_Content.g.cs
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\sommer_al_MarkupCompile.cache
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\sommer_al_MarkupCompile.lref
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\App.baml
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\MainWindow.baml
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\Pages\Autho.baml
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\Pages\Client.baml
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\Pages\EditEmployeePage.baml
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\Pages\Employee.baml
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\Pages\EmployeesList.baml
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\Pages\ProductEdit.baml
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\Pages\ProductsList.baml
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\Pages\Registration.baml
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\sommer_al.g.resources
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\sommer_al.Properties.Resources.resources
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\sommer_al.csproj.GenerateResource.cache
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\sommer_al.csproj.CoreCompileInputs.cache
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\sommer_al.csproj.Up2Date
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\sommer_al.exe
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\sommer_al.pdb
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\Pages\ChangePass.g.cs
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\Pages\ChangePass.baml
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\Pages\Profile.g.cs
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\Pages\Profile.baml
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\Pages\SecuritySettings.g.cs
+G:\ПрограмМод\PR9-ProgMod-Sommer-pr9\sommer_al\obj\Debug\Pages\SecuritySettings.baml

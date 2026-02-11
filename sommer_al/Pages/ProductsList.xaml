@@ -1,0 +1,70 @@
+﻿<Page x:Class="sommer_al.Pages.ProductsList"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:sommer_al.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="1000"
+      Title="Просмотр товаров" Background="White"
+      Loaded="Page_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10" VerticalAlignment="Center">
+            <TextBlock Text="Поиск по названию/артикулу:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+            <TextBox x:Name="tbSearch" Width="200" TextChanged="TbSearch_TextChanged"/>
+
+            <TextBlock Text="Сортировка по сезону:" VerticalAlignment="Center" Margin="20,0,5,0"/>
+            <ComboBox x:Name="cmbSeasonSort" Width="150" SelectionChanged="CmbSeasonSort_SelectionChanged">
+                <ComboBoxItem Content="Все сезоны"/>
+                <ComboBoxItem Content="Зима (1)"/>
+                <ComboBoxItem Content="Весна (2)"/>
+                <ComboBoxItem Content="Лето (3)"/>
+                <ComboBoxItem Content="Осень (4)"/>
+            </ComboBox>
+
+            <TextBlock x:Name="tblItemCount" VerticalAlignment="Center" Margin="20,0,0,0" Text="Найдено: 0"/>
+        </StackPanel>
+
+        <ListView Grid.Row="1" x:Name="lvProducts" Margin="10" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="LightGray" BorderThickness="1" Margin="5" Padding="10" Width="250" Height="220">
+                        <StackPanel>
+                            <TextBlock Text="{Binding ShoeModelName}" FontWeight="Bold" FontSize="16" TextWrapping="Wrap" Height="40"/>
+                            <TextBlock Text="{Binding Article, StringFormat=Артикул: {0}}" Foreground="Gray"/>
+
+                            <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                                <TextBlock Text="Сезон: "/>
+                                <TextBlock x:Name="tblSeasonName" Text="{Binding SeasonName}" FontWeight="SemiBold"/>
+                            </StackPanel>
+
+                            <TextBlock Text="{Binding Price, StringFormat=Цена: {0:N2} руб.}" FontSize="14" FontWeight="Bold" Margin="0,5,0,0" Foreground="DarkGreen"/>
+
+                            <TextBlock Text="Описание:" Margin="0,5,0,0" FontWeight="SemiBold"/>
+                            <TextBlock Text="{Binding ModelDescription}" TextWrapping="Wrap" MaxHeight="60" Foreground="Black"/>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+            <Button x:Name="btnEdit" Content="Изменить" Click="BtnEdit_Click" Width="100" Margin="5" Visibility="Collapsed"/>
+            <Button x:Name="btnAdd" Content="Добавить" Click="BtnAdd_Click" Width="100" Margin="5" Visibility="Collapsed"/>
+            <Button x:Name="btnDelete" Content="Удалить" Click="btnDelete_Click" Width="100" Margin="5" Visibility="Collapsed"/>
+            <Button x:Name="btnBack" Content="Назад" Click="BtnBack_Click" Width="100" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Page>

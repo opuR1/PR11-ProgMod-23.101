@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище ProgramModPR5ModelContainer" CdmEntityContainer="ProgramModPR5Entities3">
+    <EntitySetMapping Name="Clients">
+      <EntityTypeMapping TypeName="ProgramModPR5Model.Clients">
+        <MappingFragment StoreEntitySet="Clients">
+          <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="SurName" ColumnName="SurName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Comings">
+      <EntityTypeMapping TypeName="ProgramModPR5Model.Comings">
+        <MappingFragment StoreEntitySet="Comings">
+          <ScalarProperty Name="ComingID" ColumnName="ComingID" />
+          <ScalarProperty Name="ReceiptID" ColumnName="ReceiptID" />
+          <ScalarProperty Name="MaterialID" ColumnName="MaterialID" />
+          <ScalarProperty Name="MaterialCount" ColumnName="MaterialCount" />
+          <ScalarProperty Name="MaterialPricePerUnit" ColumnName="MaterialPricePerUnit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Defects">
+      <EntityTypeMapping TypeName="ProgramModPR5Model.Defects">
+        <MappingFragment StoreEntitySet="Defects">
+          <ScalarProperty Name="DefectID" ColumnName="DefectID" />
+          <ScalarProperty Name="DefectDate" ColumnName="DefectDate" />
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="DefectCount" ColumnName="DefectCount" />
+          <ScalarProperty Name="Cause" ColumnName="Cause" />
+          <ScalarProperty Name="StatysID" ColumnName="StatysID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departs">
+      <EntityTypeMapping TypeName="ProgramModPR5Model.Departs">
+        <MappingFragment StoreEntitySet="Departs">
+          <ScalarProperty Name="DepartID" ColumnName="DepartID" />
+          <ScalarProperty Name="ExpenseID" ColumnName="ExpenseID" />
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="ShoesCount" ColumnName="ShoesCount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="ProgramModPR5Model.Employees">
+        <MappingFragment StoreEntitySet="Employees">
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="SurName" ColumnName="SurName" />
+          <ScalarProperty Name="PositionID" ColumnName="PositionID" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Equipments">
+      <EntityTypeMapping TypeName="ProgramModPR5Model.Equipments">
+        <MappingFragment StoreEntitySet="Equipments">
+          <ScalarProperty Name="EquipID" ColumnName="EquipID" />
+          <ScalarProperty Name="EquipName" ColumnName="EquipName" />
+          <ScalarProperty Name="EquipTypeID" ColumnName="EquipTypeID" />
+          <ScalarProperty Name="StatysID" ColumnName="StatysID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EquipTypes">
+      <EntityTypeMapping TypeName="ProgramModPR5Model.EquipTypes">
+        <MappingFragment StoreEntitySet="EquipTypes">
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExpenseInvoices">
+      <EntityTypeMapping TypeName="ProgramModPR5Model.ExpenseInvoices">
+        <MappingFragment StoreEntitySet="ExpenseInvoices">
+          <ScalarProperty Name="ExpenseID" ColumnName="ExpenseID" />
+          <ScalarProperty Name="ExpenseNumber" ColumnName="ExpenseNumber" />
+          <ScalarProperty Name="ExpenseDate" ColumnName="ExpenseDate" />
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="TotalSum" ColumnName="TotalSum" />
+          <ScalarProperty Name="StatysID" ColumnName="StatysID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Materials">
+      <EntityTypeMapping TypeName="ProgramModPR5Model.Materials">
+        <MappingFragment StoreEntitySet="Materials">
+          <ScalarProperty Name="MaterialID" ColumnName="MaterialID" />
+          <ScalarProperty Name="MaterialName" ColumnName="MaterialName" />
+          <ScalarProperty Name="UnitID" ColumnName="UnitID" />
+          <ScalarProperty Name="MinStock" ColumnName="MinStock" />
+          <ScalarProperty Name="CurrentStock" ColumnName="CurrentStock" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Positions">
+      <EntityTypeMapping TypeName="ProgramModPR5Model.Positions">
+        <MappingFragment StoreEntitySet="Positions">
+          <ScalarProperty Name="PositionID" ColumnName="PositionID" />
+          <ScalarProperty Name="PositionName" ColumnName="PositionName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReceiptInvoices">
+      <EntityTypeMapping TypeName="ProgramModPR5Model.ReceiptInvoices">
+        <MappingFragment StoreEntitySet="ReceiptInvoices">
+          <ScalarProperty Name="ReceiptID" ColumnName="ReceiptID" />
+          <ScalarProperty Name="ReceiptNumber" ColumnName="ReceiptNumber" />
+          <ScalarProperty Name="ReceiptDate" ColumnName="ReceiptDate" />
+          <ScalarProperty Name="SupplierID" ColumnName="SupplierID" />
+          <ScalarProperty Name="TotalSum" ColumnName="TotalSum" />
+          <ScalarProperty Name="StatysID" ColumnName="StatysID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reviews">
+      <EntityTypeMapping TypeName="ProgramModPR5Model.Reviews">
+        <MappingFragment StoreEntitySet="Reviews">
+          <ScalarProperty Name="ReviewID" ColumnName="ReviewID" />
+          <ScalarProperty Name="ReviewDate" ColumnName="ReviewDate" />
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="ReviewDesc" ColumnName="ReviewDesc" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="ProgramModPR5Model.Roles">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Seasons">
+      <EntityTypeMapping TypeName="ProgramModPR5Model.Seasons">
+        <MappingFragment StoreEntitySet="Seasons">
+          <ScalarProperty Name="SeasonID" ColumnName="SeasonID" />
+          <ScalarProperty Name="SeasonName" ColumnName="SeasonName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShoeModels">
+      <EntityTypeMapping TypeName="ProgramModPR5Model.ShoeModels">
+        <MappingFragment StoreEntitySet="ShoeModels">
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="ShoeModelName" ColumnName="ShoeModelName" />
+          <ScalarProperty Name="Article" ColumnName="Article" />
+          <ScalarProperty Name="SeasonID" ColumnName="SeasonID" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="CostPrice" ColumnName="CostPrice" />
+          <ScalarProperty Name="ModelDescription" ColumnName="ModelDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Statys">
+      <EntityTypeMapping TypeName="ProgramModPR5Model.Statys">
+        <MappingFragment StoreEntitySet="Statys">
+          <ScalarProperty Name="StatysID" ColumnName="StatysID" />
+          <ScalarProperty Name="StatysName" ColumnName="StatysName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stores">
+      <EntityTypeMapping TypeName="ProgramModPR5Model.Stores">
+        <MappingFragment StoreEntitySet="Stores">
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="StoreName" ColumnName="StoreName" />
+          <ScalarProperty Name="StoreAddress" ColumnName="StoreAddress" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Suppliers">
+      <EntityTypeMapping TypeName="ProgramModPR5Model.Suppliers">
+        <MappingFragment StoreEntitySet="Suppliers">
+          <ScalarProperty Name="SupplierID" ColumnName="SupplierID" />
+          <ScalarProperty Name="SupplyName" ColumnName="SupplyName" />
+          <ScalarProperty Name="SupplyAddress" ColumnName="SupplyAddress" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TMRequests">
+      <EntityTypeMapping TypeName="ProgramModPR5Model.TMRequests">
+        <MappingFragment StoreEntitySet="TMRequests">
+          <ScalarProperty Name="RequestID" ColumnName="RequestID" />
+          <ScalarProperty Name="EquipID" ColumnName="EquipID" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="RequestDate" ColumnName="RequestDate" />
+          <ScalarProperty Name="TMRequestDescription" ColumnName="TMRequestDescription" />
+          <ScalarProperty Name="StatysID" ColumnName="StatysID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Units">
+      <EntityTypeMapping TypeName="ProgramModPR5Model.Units">
+        <MappingFragment StoreEntitySet="Units">
+          <ScalarProperty Name="UnitID" ColumnName="UnitID" />
+          <ScalarProperty Name="UnitName" ColumnName="UnitName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="ProgramModPR5Model.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

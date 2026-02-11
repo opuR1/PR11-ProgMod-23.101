@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6e1fbc18731e4913b95d4728fe1e0209" Name="Diagram1">
+        <EntityTypeShape EntityType="ProgramModPR5Model.Clients" Width="1.5" PointX="6" PointY="24.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProgramModPR5Model.Comings" Width="1.5" PointX="5.25" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProgramModPR5Model.Defects" Width="1.5" PointX="3" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProgramModPR5Model.Departs" Width="1.5" PointX="5.25" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProgramModPR5Model.Employees" Width="1.5" PointX="6" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProgramModPR5Model.Equipments" Width="1.5" PointX="6" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProgramModPR5Model.EquipTypes" Width="1.5" PointX="3.75" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProgramModPR5Model.ExpenseInvoices" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProgramModPR5Model.Materials" Width="1.5" PointX="3" PointY="25.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProgramModPR5Model.Positions" Width="1.5" PointX="3.75" PointY="19" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProgramModPR5Model.ReceiptInvoices" Width="1.5" PointX="3" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProgramModPR5Model.Reviews" Width="1.5" PointX="5.25" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProgramModPR5Model.Roles" Width="1.5" PointX="1.5" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProgramModPR5Model.Seasons" Width="1.5" PointX="0.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProgramModPR5Model.ShoeModels" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProgramModPR5Model.Statys" Width="1.5" PointX="0.75" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProgramModPR5Model.Stores" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProgramModPR5Model.Suppliers" Width="1.5" PointX="0.75" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProgramModPR5Model.TMRequests" Width="1.5" PointX="8.25" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProgramModPR5Model.Units" Width="1.5" PointX="0.75" PointY="25.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProgramModPR5Model.Users" Width="1.5" PointX="3.75" PointY="21.25" IsExpanded="true" />
+        <AssociationConnector Association="ProgramModPR5Model.FK__Clients__UserID__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="ProgramModPR5Model.FK__Comings__Materia__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="ProgramModPR5Model.FK__Comings__Receipt__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="ProgramModPR5Model.FK__Defects__ModelID__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="ProgramModPR5Model.FK__Defects__StatysI__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="ProgramModPR5Model.FK__Departs__Expense__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="ProgramModPR5Model.FK__Departs__ModelID__5070F446" ManuallyRouted="false" />
+        <AssociationConnector Association="ProgramModPR5Model.FK__Employees__Posit__5165187F" ManuallyRouted="false" />
+        <AssociationConnector Association="ProgramModPR5Model.FK__Employees__UserI__52593CB8" ManuallyRouted="false" />
+        <AssociationConnector Association="ProgramModPR5Model.FK__TMRequest__Emplo__5CD6CB2B" ManuallyRouted="false" />
+        <AssociationConnector Association="ProgramModPR5Model.FK__Equipment__Equip__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="ProgramModPR5Model.FK__Equipment__Staty__5441852A" ManuallyRouted="false" />
+        <AssociationConnector Association="ProgramModPR5Model.FK__TMRequest__Equip__5DCAEF64" ManuallyRouted="false" />
+        <AssociationConnector Association="ProgramModPR5Model.FK__ExpenseIn__Staty__5535A963" ManuallyRouted="false" />
+        <AssociationConnector Association="ProgramModPR5Model.FK__ExpenseIn__Store__5629CD9C" ManuallyRouted="false" />
+        <AssociationConnector Association="ProgramModPR5Model.FK__Materials__UnitI__571DF1D5" ManuallyRouted="false" />
+        <AssociationConnector Association="ProgramModPR5Model.FK__ReceiptIn__Staty__5812160E" ManuallyRouted="false" />
+        <AssociationConnector Association="ProgramModPR5Model.FK__ReceiptIn__Suppl__59063A47" ManuallyRouted="false" />
+        <AssociationConnector Association="ProgramModPR5Model.FK__Reviews__ModelID__59FA5E80" ManuallyRouted="false" />
+        <AssociationConnector Association="ProgramModPR5Model.FK__Reviews__StoreID__5AEE82B9" ManuallyRouted="false" />
+        <AssociationConnector Association="ProgramModPR5Model.FK__Users__RoleID__5FB337D6" ManuallyRouted="false" />
+        <AssociationConnector Association="ProgramModPR5Model.FK__ShoeModel__Seaso__5BE2A6F2" ManuallyRouted="false" />
+        <AssociationConnector Association="ProgramModPR5Model.FK__TMRequest__Staty__5EBF139D" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
