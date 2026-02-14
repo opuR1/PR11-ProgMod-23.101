@@ -1,0 +1,61 @@
+﻿<Page x:Class="sommer_al.Pages.EmployeesList"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:sommer_al.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="1000"
+      Title="EmployeesList" Background="White">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10">
+            <TextBlock Text="Поиск:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+            <TextBox x:Name="tbSearch" Width="200" TextChanged="TbSearch_TextChanged"/>
+            <Button x:Name="btnRefresh" Content="Обновить" Margin="10,0,0,0" Click="BtnRefresh_Click"/>
+        </StackPanel>
+
+        <DataGrid Grid.Row="1" x:Name="dgEmployees" 
+                  AutoGenerateColumns="False" 
+                  IsReadOnly="True" 
+                  Margin="10" 
+                  SelectionMode="Single">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Header="Фото">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Source="/sommer_al;component/Images/EmployeePhoto.jpg" Width="50" Height="50" Stretch="UniformToFill"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTextColumn Header="Фамилия" Binding="{Binding LastName}" Width="*"/>
+                <DataGridTextColumn Header="Имя" Binding="{Binding FirstName}" Width="*"/>
+                <DataGridTextColumn Header="Отчество" Binding="{Binding SurName}" Width="*"/>
+                <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="1.5*"/>
+                <DataGridTextColumn Header="Телефон" Binding="{Binding Phone}" Width="*"/>
+                <DataGridTextColumn Header="Должность" Binding="{Binding Positions.PositionName}" Width="*"/>
+
+                <DataGridTemplateColumn Header="Ред." Width="SizeToHeader">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Изменить" Click="BtnEdit_Click" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+            <Button x:Name="btnAdd" Content="Добавить сотрудника" Margin="5" Click="BtnAdd_Click"/>
+            <Button x:Name="btnDelete" Content="Удалить сотрудника" Margin="5" Click="BtnDelete_Click"/>
+            <Button x:Name="btnBack" Content="Назад" Margin="5" Click="BtnBack_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

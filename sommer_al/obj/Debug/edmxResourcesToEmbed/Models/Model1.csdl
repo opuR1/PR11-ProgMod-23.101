@@ -1,0 +1,641 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProgramModPR5Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Clients">
+    <Key>
+      <PropertyRef Name="ClientID" />
+    </Key>
+    <Property Name="ClientID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SurName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__Clients__UserID__74AE54BC" FromRole="Clients" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Comings">
+    <Key>
+      <PropertyRef Name="ComingID" />
+    </Key>
+    <Property Name="ComingID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ReceiptID" Type="Int32" Nullable="false" />
+    <Property Name="MaterialID" Type="Int32" Nullable="false" />
+    <Property Name="MaterialCount" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="MaterialPricePerUnit" Type="Decimal" Precision="10" Scale="2" />
+    <NavigationProperty Name="Materials" Relationship="Self.FK__Comings__Materia__619B8048" FromRole="Comings" ToRole="Materials" />
+    <NavigationProperty Name="ReceiptInvoices" Relationship="Self.FK__Comings__Receipt__60A75C0F" FromRole="Comings" ToRole="ReceiptInvoices" />
+  </EntityType>
+  <EntityType Name="Defects">
+    <Key>
+      <PropertyRef Name="DefectID" />
+    </Key>
+    <Property Name="DefectID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DefectDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="ModelID" Type="Int32" Nullable="false" />
+    <Property Name="DefectCount" Type="Int32" />
+    <Property Name="Cause" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="StatysID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ShoeModels" Relationship="Self.FK__Defects__ModelID__6C190EBB" FromRole="Defects" ToRole="ShoeModels" />
+    <NavigationProperty Name="Statys" Relationship="Self.FK__Defects__StatysI__6D0D32F4" FromRole="Defects" ToRole="Statys" />
+  </EntityType>
+  <EntityType Name="Departs">
+    <Key>
+      <PropertyRef Name="DepartID" />
+    </Key>
+    <Property Name="DepartID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ExpenseID" Type="Int32" Nullable="false" />
+    <Property Name="ModelID" Type="Int32" Nullable="false" />
+    <Property Name="ShoesCount" Type="Int32" />
+    <NavigationProperty Name="ExpenseInvoices" Relationship="Self.FK__Departs__Expense__68487DD7" FromRole="Departs" ToRole="ExpenseInvoices" />
+    <NavigationProperty Name="ShoeModels" Relationship="Self.FK__Departs__ModelID__693CA210" FromRole="Departs" ToRole="ShoeModels" />
+  </EntityType>
+  <EntityType Name="Employees">
+    <Key>
+      <PropertyRef Name="EmployeeID" />
+    </Key>
+    <Property Name="EmployeeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SurName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PositionID" Type="Int32" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Positions" Relationship="Self.FK__Employees__Posit__4CA06362" FromRole="Employees" ToRole="Positions" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__Employees__UserI__4D94879B" FromRole="Employees" ToRole="Users" />
+    <NavigationProperty Name="TMRequests" Relationship="Self.FK__TMRequest__Emplo__59063A47" FromRole="Employees" ToRole="TMRequests" />
+  </EntityType>
+  <EntityType Name="Equipments">
+    <Key>
+      <PropertyRef Name="EquipID" />
+    </Key>
+    <Property Name="EquipID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EquipName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EquipTypeID" Type="Int32" Nullable="false" />
+    <Property Name="StatysID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="EquipTypes" Relationship="Self.FK__Equipment__Equip__5441852A" FromRole="Equipments" ToRole="EquipTypes" />
+    <NavigationProperty Name="Statys" Relationship="Self.FK__Equipment__Staty__5535A963" FromRole="Equipments" ToRole="Statys" />
+    <NavigationProperty Name="TMRequests" Relationship="Self.FK__TMRequest__Equip__5812160E" FromRole="Equipments" ToRole="TMRequests" />
+  </EntityType>
+  <EntityType Name="EquipTypes">
+    <Key>
+      <PropertyRef Name="TypeID" />
+    </Key>
+    <Property Name="TypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TypeName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Equipments" Relationship="Self.FK__Equipment__Equip__5441852A" FromRole="EquipTypes" ToRole="Equipments" />
+  </EntityType>
+  <EntityType Name="ExpenseInvoices">
+    <Key>
+      <PropertyRef Name="ExpenseID" />
+    </Key>
+    <Property Name="ExpenseID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ExpenseNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ExpenseDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="StoreID" Type="Int32" Nullable="false" />
+    <Property Name="TotalSum" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="StatysID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Departs" Relationship="Self.FK__Departs__Expense__68487DD7" FromRole="ExpenseInvoices" ToRole="Departs" />
+    <NavigationProperty Name="Statys" Relationship="Self.FK__ExpenseIn__Staty__656C112C" FromRole="ExpenseInvoices" ToRole="Statys" />
+    <NavigationProperty Name="Stores" Relationship="Self.FK__ExpenseIn__Store__6477ECF3" FromRole="ExpenseInvoices" ToRole="Stores" />
+  </EntityType>
+  <EntityType Name="Materials">
+    <Key>
+      <PropertyRef Name="MaterialID" />
+    </Key>
+    <Property Name="MaterialID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaterialName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UnitID" Type="Int32" Nullable="false" />
+    <Property Name="MinStock" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="CurrentStock" Type="Decimal" Precision="10" Scale="2" />
+    <NavigationProperty Name="Comings" Relationship="Self.FK__Comings__Materia__619B8048" FromRole="Materials" ToRole="Comings" />
+    <NavigationProperty Name="Units" Relationship="Self.FK__Materials__UnitI__4316F928" FromRole="Materials" ToRole="Units" />
+  </EntityType>
+  <EntityType Name="Positions">
+    <Key>
+      <PropertyRef Name="PositionID" />
+    </Key>
+    <Property Name="PositionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PositionName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Employees" Relationship="Self.FK__Employees__Posit__4CA06362" FromRole="Positions" ToRole="Employees" />
+  </EntityType>
+  <EntityType Name="ReceiptInvoices">
+    <Key>
+      <PropertyRef Name="ReceiptID" />
+    </Key>
+    <Property Name="ReceiptID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ReceiptNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ReceiptDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="SupplierID" Type="Int32" Nullable="false" />
+    <Property Name="TotalSum" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="StatysID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Comings" Relationship="Self.FK__Comings__Receipt__60A75C0F" FromRole="ReceiptInvoices" ToRole="Comings" />
+    <NavigationProperty Name="Statys" Relationship="Self.FK__ReceiptIn__Staty__5DCAEF64" FromRole="ReceiptInvoices" ToRole="Statys" />
+    <NavigationProperty Name="Suppliers" Relationship="Self.FK__ReceiptIn__Suppl__5CD6CB2B" FromRole="ReceiptInvoices" ToRole="Suppliers" />
+  </EntityType>
+  <EntityType Name="Reviews">
+    <Key>
+      <PropertyRef Name="ReviewID" />
+    </Key>
+    <Property Name="ReviewID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ReviewDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="StoreID" Type="Int32" Nullable="false" />
+    <Property Name="ModelID" Type="Int32" Nullable="false" />
+    <Property Name="ReviewDesc" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Rating" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ShoeModels" Relationship="Self.FK__Reviews__ModelID__70DDC3D8" FromRole="Reviews" ToRole="ShoeModels" />
+    <NavigationProperty Name="Stores" Relationship="Self.FK__Reviews__StoreID__6FE99F9F" FromRole="Reviews" ToRole="Stores" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="RoleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Role" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Users" Relationship="Self.FK__Users__RoleID__3C69FB99" FromRole="Roles" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Seasons">
+    <Key>
+      <PropertyRef Name="SeasonID" />
+    </Key>
+    <Property Name="SeasonID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SeasonName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="ShoeModels" Relationship="Self.FK__ShoeModel__Seaso__47DBAE45" FromRole="Seasons" ToRole="ShoeModels" />
+  </EntityType>
+  <EntityType Name="ShoeModels">
+    <Key>
+      <PropertyRef Name="ModelID" />
+    </Key>
+    <Property Name="ModelID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ShoeModelName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SeasonID" Type="Int32" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="CostPrice" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="ModelDescription" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Defects" Relationship="Self.FK__Defects__ModelID__6C190EBB" FromRole="ShoeModels" ToRole="Defects" />
+    <NavigationProperty Name="Departs" Relationship="Self.FK__Departs__ModelID__693CA210" FromRole="ShoeModels" ToRole="Departs" />
+    <NavigationProperty Name="Reviews" Relationship="Self.FK__Reviews__ModelID__70DDC3D8" FromRole="ShoeModels" ToRole="Reviews" />
+    <NavigationProperty Name="Seasons" Relationship="Self.FK__ShoeModel__Seaso__47DBAE45" FromRole="ShoeModels" ToRole="Seasons" />
+  </EntityType>
+  <EntityType Name="Statys">
+    <Key>
+      <PropertyRef Name="StatysID" />
+    </Key>
+    <Property Name="StatysID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StatysName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Defects" Relationship="Self.FK__Defects__StatysI__6D0D32F4" FromRole="Statys" ToRole="Defects" />
+    <NavigationProperty Name="Equipments" Relationship="Self.FK__Equipment__Staty__5535A963" FromRole="Statys" ToRole="Equipments" />
+    <NavigationProperty Name="ExpenseInvoices" Relationship="Self.FK__ExpenseIn__Staty__656C112C" FromRole="Statys" ToRole="ExpenseInvoices" />
+    <NavigationProperty Name="ReceiptInvoices" Relationship="Self.FK__ReceiptIn__Staty__5DCAEF64" FromRole="Statys" ToRole="ReceiptInvoices" />
+    <NavigationProperty Name="TMRequests" Relationship="Self.FK__TMRequest__Staty__59FA5E80" FromRole="Statys" ToRole="TMRequests" />
+  </EntityType>
+  <EntityType Name="Stores">
+    <Key>
+      <PropertyRef Name="StoreID" />
+    </Key>
+    <Property Name="StoreID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StoreName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="StoreAddress" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ExpenseInvoices" Relationship="Self.FK__ExpenseIn__Store__6477ECF3" FromRole="Stores" ToRole="ExpenseInvoices" />
+    <NavigationProperty Name="Reviews" Relationship="Self.FK__Reviews__StoreID__6FE99F9F" FromRole="Stores" ToRole="Reviews" />
+  </EntityType>
+  <EntityType Name="Suppliers">
+    <Key>
+      <PropertyRef Name="SupplierID" />
+    </Key>
+    <Property Name="SupplierID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SupplyName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SupplyAddress" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ReceiptInvoices" Relationship="Self.FK__ReceiptIn__Suppl__5CD6CB2B" FromRole="Suppliers" ToRole="ReceiptInvoices" />
+  </EntityType>
+  <EntityType Name="TMRequests">
+    <Key>
+      <PropertyRef Name="RequestID" />
+    </Key>
+    <Property Name="RequestID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EquipID" Type="Int32" Nullable="false" />
+    <Property Name="EmployeeID" Type="Int32" Nullable="false" />
+    <Property Name="RequestDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="TMRequestDescription" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="StatysID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Employees" Relationship="Self.FK__TMRequest__Emplo__59063A47" FromRole="TMRequests" ToRole="Employees" />
+    <NavigationProperty Name="Equipments" Relationship="Self.FK__TMRequest__Equip__5812160E" FromRole="TMRequests" ToRole="Equipments" />
+    <NavigationProperty Name="Statys" Relationship="Self.FK__TMRequest__Staty__59FA5E80" FromRole="TMRequests" ToRole="Statys" />
+  </EntityType>
+  <EntityType Name="Units">
+    <Key>
+      <PropertyRef Name="UnitID" />
+    </Key>
+    <Property Name="UnitID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UnitName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Materials" Relationship="Self.FK__Materials__UnitI__4316F928" FromRole="Units" ToRole="Materials" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RoleID" Type="Int32" Nullable="false" />
+    <Property Name="IsTwoFactorEnabled" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Clients" Relationship="Self.FK__Clients__UserID__74AE54BC" FromRole="Users" ToRole="Clients" />
+    <NavigationProperty Name="Employees" Relationship="Self.FK__Employees__UserI__4D94879B" FromRole="Users" ToRole="Employees" />
+    <NavigationProperty Name="Roles" Relationship="Self.FK__Users__RoleID__3C69FB99" FromRole="Users" ToRole="Roles" />
+  </EntityType>
+  <Association Name="FK__Clients__UserID__74AE54BC">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Clients" Type="Self.Clients" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Clients">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Comings__Materia__619B8048">
+    <End Role="Materials" Type="Self.Materials" Multiplicity="1" />
+    <End Role="Comings" Type="Self.Comings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Materials">
+        <PropertyRef Name="MaterialID" />
+      </Principal>
+      <Dependent Role="Comings">
+        <PropertyRef Name="MaterialID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Comings__Receipt__60A75C0F">
+    <End Role="ReceiptInvoices" Type="Self.ReceiptInvoices" Multiplicity="1" />
+    <End Role="Comings" Type="Self.Comings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ReceiptInvoices">
+        <PropertyRef Name="ReceiptID" />
+      </Principal>
+      <Dependent Role="Comings">
+        <PropertyRef Name="ReceiptID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Defects__ModelID__6C190EBB">
+    <End Role="ShoeModels" Type="Self.ShoeModels" Multiplicity="1" />
+    <End Role="Defects" Type="Self.Defects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ShoeModels">
+        <PropertyRef Name="ModelID" />
+      </Principal>
+      <Dependent Role="Defects">
+        <PropertyRef Name="ModelID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Defects__StatysI__6D0D32F4">
+    <End Role="Statys" Type="Self.Statys" Multiplicity="1" />
+    <End Role="Defects" Type="Self.Defects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Statys">
+        <PropertyRef Name="StatysID" />
+      </Principal>
+      <Dependent Role="Defects">
+        <PropertyRef Name="StatysID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Departs__Expense__68487DD7">
+    <End Role="ExpenseInvoices" Type="Self.ExpenseInvoices" Multiplicity="1" />
+    <End Role="Departs" Type="Self.Departs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ExpenseInvoices">
+        <PropertyRef Name="ExpenseID" />
+      </Principal>
+      <Dependent Role="Departs">
+        <PropertyRef Name="ExpenseID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Departs__ModelID__693CA210">
+    <End Role="ShoeModels" Type="Self.ShoeModels" Multiplicity="1" />
+    <End Role="Departs" Type="Self.Departs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ShoeModels">
+        <PropertyRef Name="ModelID" />
+      </Principal>
+      <Dependent Role="Departs">
+        <PropertyRef Name="ModelID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Employees__Posit__4CA06362">
+    <End Role="Positions" Type="Self.Positions" Multiplicity="1" />
+    <End Role="Employees" Type="Self.Employees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Positions">
+        <PropertyRef Name="PositionID" />
+      </Principal>
+      <Dependent Role="Employees">
+        <PropertyRef Name="PositionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Employees__UserI__4D94879B">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Employees" Type="Self.Employees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Employees">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TMRequest__Emplo__59063A47">
+    <End Role="Employees" Type="Self.Employees" Multiplicity="1" />
+    <End Role="TMRequests" Type="Self.TMRequests" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="EmployeeID" />
+      </Principal>
+      <Dependent Role="TMRequests">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Equipment__Equip__5441852A">
+    <End Role="EquipTypes" Type="Self.EquipTypes" Multiplicity="1" />
+    <End Role="Equipments" Type="Self.Equipments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EquipTypes">
+        <PropertyRef Name="TypeID" />
+      </Principal>
+      <Dependent Role="Equipments">
+        <PropertyRef Name="EquipTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Equipment__Staty__5535A963">
+    <End Role="Statys" Type="Self.Statys" Multiplicity="1" />
+    <End Role="Equipments" Type="Self.Equipments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Statys">
+        <PropertyRef Name="StatysID" />
+      </Principal>
+      <Dependent Role="Equipments">
+        <PropertyRef Name="StatysID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TMRequest__Equip__5812160E">
+    <End Role="Equipments" Type="Self.Equipments" Multiplicity="1" />
+    <End Role="TMRequests" Type="Self.TMRequests" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Equipments">
+        <PropertyRef Name="EquipID" />
+      </Principal>
+      <Dependent Role="TMRequests">
+        <PropertyRef Name="EquipID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ExpenseIn__Staty__656C112C">
+    <End Role="Statys" Type="Self.Statys" Multiplicity="1" />
+    <End Role="ExpenseInvoices" Type="Self.ExpenseInvoices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Statys">
+        <PropertyRef Name="StatysID" />
+      </Principal>
+      <Dependent Role="ExpenseInvoices">
+        <PropertyRef Name="StatysID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ExpenseIn__Store__6477ECF3">
+    <End Role="Stores" Type="Self.Stores" Multiplicity="1" />
+    <End Role="ExpenseInvoices" Type="Self.ExpenseInvoices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Stores">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="ExpenseInvoices">
+        <PropertyRef Name="StoreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Materials__UnitI__4316F928">
+    <End Role="Units" Type="Self.Units" Multiplicity="1" />
+    <End Role="Materials" Type="Self.Materials" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Units">
+        <PropertyRef Name="UnitID" />
+      </Principal>
+      <Dependent Role="Materials">
+        <PropertyRef Name="UnitID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ReceiptIn__Staty__5DCAEF64">
+    <End Role="Statys" Type="Self.Statys" Multiplicity="1" />
+    <End Role="ReceiptInvoices" Type="Self.ReceiptInvoices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Statys">
+        <PropertyRef Name="StatysID" />
+      </Principal>
+      <Dependent Role="ReceiptInvoices">
+        <PropertyRef Name="StatysID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ReceiptIn__Suppl__5CD6CB2B">
+    <End Role="Suppliers" Type="Self.Suppliers" Multiplicity="1" />
+    <End Role="ReceiptInvoices" Type="Self.ReceiptInvoices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Suppliers">
+        <PropertyRef Name="SupplierID" />
+      </Principal>
+      <Dependent Role="ReceiptInvoices">
+        <PropertyRef Name="SupplierID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Reviews__ModelID__70DDC3D8">
+    <End Role="ShoeModels" Type="Self.ShoeModels" Multiplicity="1" />
+    <End Role="Reviews" Type="Self.Reviews" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ShoeModels">
+        <PropertyRef Name="ModelID" />
+      </Principal>
+      <Dependent Role="Reviews">
+        <PropertyRef Name="ModelID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Reviews__StoreID__6FE99F9F">
+    <End Role="Stores" Type="Self.Stores" Multiplicity="1" />
+    <End Role="Reviews" Type="Self.Reviews" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Stores">
+        <PropertyRef Name="StoreID" />
+      </Principal>
+      <Dependent Role="Reviews">
+        <PropertyRef Name="StoreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Users__RoleID__3C69FB99">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="1" />
+    <End Role="Users" Type="Self.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="RoleID" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ShoeModel__Seaso__47DBAE45">
+    <End Role="Seasons" Type="Self.Seasons" Multiplicity="1" />
+    <End Role="ShoeModels" Type="Self.ShoeModels" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seasons">
+        <PropertyRef Name="SeasonID" />
+      </Principal>
+      <Dependent Role="ShoeModels">
+        <PropertyRef Name="SeasonID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__TMRequest__Staty__59FA5E80">
+    <End Role="Statys" Type="Self.Statys" Multiplicity="1" />
+    <End Role="TMRequests" Type="Self.TMRequests" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Statys">
+        <PropertyRef Name="StatysID" />
+      </Principal>
+      <Dependent Role="TMRequests">
+        <PropertyRef Name="StatysID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ProgramModPR5Entities3" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Clients" EntityType="Self.Clients" />
+    <EntitySet Name="Comings" EntityType="Self.Comings" />
+    <EntitySet Name="Defects" EntityType="Self.Defects" />
+    <EntitySet Name="Departs" EntityType="Self.Departs" />
+    <EntitySet Name="Employees" EntityType="Self.Employees" />
+    <EntitySet Name="Equipments" EntityType="Self.Equipments" />
+    <EntitySet Name="EquipTypes" EntityType="Self.EquipTypes" />
+    <EntitySet Name="ExpenseInvoices" EntityType="Self.ExpenseInvoices" />
+    <EntitySet Name="Materials" EntityType="Self.Materials" />
+    <EntitySet Name="Positions" EntityType="Self.Positions" />
+    <EntitySet Name="ReceiptInvoices" EntityType="Self.ReceiptInvoices" />
+    <EntitySet Name="Reviews" EntityType="Self.Reviews" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" />
+    <EntitySet Name="Seasons" EntityType="Self.Seasons" />
+    <EntitySet Name="ShoeModels" EntityType="Self.ShoeModels" />
+    <EntitySet Name="Statys" EntityType="Self.Statys" />
+    <EntitySet Name="Stores" EntityType="Self.Stores" />
+    <EntitySet Name="Suppliers" EntityType="Self.Suppliers" />
+    <EntitySet Name="TMRequests" EntityType="Self.TMRequests" />
+    <EntitySet Name="Units" EntityType="Self.Units" />
+    <EntitySet Name="Users" EntityType="Self.Users" />
+    <AssociationSet Name="FK__Clients__UserID__74AE54BC" Association="Self.FK__Clients__UserID__74AE54BC">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Clients" EntitySet="Clients" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Comings__Materia__619B8048" Association="Self.FK__Comings__Materia__619B8048">
+      <End Role="Materials" EntitySet="Materials" />
+      <End Role="Comings" EntitySet="Comings" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Comings__Receipt__60A75C0F" Association="Self.FK__Comings__Receipt__60A75C0F">
+      <End Role="ReceiptInvoices" EntitySet="ReceiptInvoices" />
+      <End Role="Comings" EntitySet="Comings" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Defects__ModelID__6C190EBB" Association="Self.FK__Defects__ModelID__6C190EBB">
+      <End Role="ShoeModels" EntitySet="ShoeModels" />
+      <End Role="Defects" EntitySet="Defects" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Defects__StatysI__6D0D32F4" Association="Self.FK__Defects__StatysI__6D0D32F4">
+      <End Role="Statys" EntitySet="Statys" />
+      <End Role="Defects" EntitySet="Defects" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Departs__Expense__68487DD7" Association="Self.FK__Departs__Expense__68487DD7">
+      <End Role="ExpenseInvoices" EntitySet="ExpenseInvoices" />
+      <End Role="Departs" EntitySet="Departs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Departs__ModelID__693CA210" Association="Self.FK__Departs__ModelID__693CA210">
+      <End Role="ShoeModels" EntitySet="ShoeModels" />
+      <End Role="Departs" EntitySet="Departs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Employees__Posit__4CA06362" Association="Self.FK__Employees__Posit__4CA06362">
+      <End Role="Positions" EntitySet="Positions" />
+      <End Role="Employees" EntitySet="Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Employees__UserI__4D94879B" Association="Self.FK__Employees__UserI__4D94879B">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Employees" EntitySet="Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TMRequest__Emplo__59063A47" Association="Self.FK__TMRequest__Emplo__59063A47">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="TMRequests" EntitySet="TMRequests" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Equipment__Equip__5441852A" Association="Self.FK__Equipment__Equip__5441852A">
+      <End Role="EquipTypes" EntitySet="EquipTypes" />
+      <End Role="Equipments" EntitySet="Equipments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Equipment__Staty__5535A963" Association="Self.FK__Equipment__Staty__5535A963">
+      <End Role="Statys" EntitySet="Statys" />
+      <End Role="Equipments" EntitySet="Equipments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TMRequest__Equip__5812160E" Association="Self.FK__TMRequest__Equip__5812160E">
+      <End Role="Equipments" EntitySet="Equipments" />
+      <End Role="TMRequests" EntitySet="TMRequests" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ExpenseIn__Staty__656C112C" Association="Self.FK__ExpenseIn__Staty__656C112C">
+      <End Role="Statys" EntitySet="Statys" />
+      <End Role="ExpenseInvoices" EntitySet="ExpenseInvoices" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ExpenseIn__Store__6477ECF3" Association="Self.FK__ExpenseIn__Store__6477ECF3">
+      <End Role="Stores" EntitySet="Stores" />
+      <End Role="ExpenseInvoices" EntitySet="ExpenseInvoices" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Materials__UnitI__4316F928" Association="Self.FK__Materials__UnitI__4316F928">
+      <End Role="Units" EntitySet="Units" />
+      <End Role="Materials" EntitySet="Materials" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ReceiptIn__Staty__5DCAEF64" Association="Self.FK__ReceiptIn__Staty__5DCAEF64">
+      <End Role="Statys" EntitySet="Statys" />
+      <End Role="ReceiptInvoices" EntitySet="ReceiptInvoices" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ReceiptIn__Suppl__5CD6CB2B" Association="Self.FK__ReceiptIn__Suppl__5CD6CB2B">
+      <End Role="Suppliers" EntitySet="Suppliers" />
+      <End Role="ReceiptInvoices" EntitySet="ReceiptInvoices" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Reviews__ModelID__70DDC3D8" Association="Self.FK__Reviews__ModelID__70DDC3D8">
+      <End Role="ShoeModels" EntitySet="ShoeModels" />
+      <End Role="Reviews" EntitySet="Reviews" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Reviews__StoreID__6FE99F9F" Association="Self.FK__Reviews__StoreID__6FE99F9F">
+      <End Role="Stores" EntitySet="Stores" />
+      <End Role="Reviews" EntitySet="Reviews" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Users__RoleID__3C69FB99" Association="Self.FK__Users__RoleID__3C69FB99">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ShoeModel__Seaso__47DBAE45" Association="Self.FK__ShoeModel__Seaso__47DBAE45">
+      <End Role="Seasons" EntitySet="Seasons" />
+      <End Role="ShoeModels" EntitySet="ShoeModels" />
+    </AssociationSet>
+    <AssociationSet Name="FK__TMRequest__Staty__59FA5E80" Association="Self.FK__TMRequest__Staty__59FA5E80">
+      <End Role="Statys" EntitySet="Statys" />
+      <End Role="TMRequests" EntitySet="TMRequests" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
